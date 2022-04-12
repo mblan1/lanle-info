@@ -1,0 +1,116 @@
+    @media (max-width: 1023px) {
+        .heading .social {
+            flex-direction: column;
+            width: 644px;
+            top: 72px;
+        }
+        .social-info {
+            flex-direction: column;
+            align-items: center;
+        }
+        .social-profile {
+            border-left: 0;
+            padding: 12px 0;
+        }
+        .social-avt-img {
+            transform: translateY(-50%);
+        }
+        .social-heading-info {
+            transform: translateY(-32%);
+        }
+        .social-name {
+            /* padding-left: 30px; */
+            display: flex;
+            justify-content: center;
+        }
+        .social-job {
+            justify-content: center;
+            padding-top: 12px;
+        }
+        .profile-info {
+            padding: 12px 48px;
+        }
+        /* hover */
+        .social-links-profile {
+            padding: 0px 8px;
+        }
+        .social-links__facebook,
+        .social-links__insta,
+        .social-links__tiktok,
+        .social-links__youtube {
+            margin-bottom: -12px;
+            left: 14px;
+        }
+        .social-links__insta {
+            left: 70px;
+        }
+        .social-links__tiktok {
+            left: 136px;
+        }
+        .social-links__youtube {
+            left: 186px;
+        }
+        /* body-nav */
+        .body {
+            top: 630px;
+        }
+        .body-contains {
+            width: 644px;
+        }
+        .nav-list {
+            position: fixed;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            z-index: 999;
+            background-color: rgba(162, 184, 231, .7);
+            animation: upTo .4s linear !important;
+        }
+        .nav-name {
+            margin: 0 18px;
+        }
+        .nav-fixed {
+            z-index: 999;
+        }
+        .nav-icons {
+            font-size: 24px;
+        }
+        /* content */
+        .content {
+            margin: 0 0 140px 0;
+        }
+        .ml {
+            margin: 0 0 140px 0 !important;
+        }
+    }
+    
+    @media (max-width: 740px) {
+        .body-contains,
+        .heading .social {
+            width: 400px;
+        }
+        .profile-info {
+            padding: 12px 0;
+        }
+        .nav-list {
+            left: 0;
+            width: 100%;
+        }
+        .ent-img {
+            min-width: 130px;
+            width: 130px;
+            height: 80px;
+        }
+        .nav-name {
+            margin: 0 12px;
+            padding: 12px 0;
+            min-width: 20%;
+        }
+    }
+    
+    @media (max-width: 420px) {
+        .body-contains,
+        .heading .social {
+            width: 95%;
+        }
+    }
