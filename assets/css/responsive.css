@@ -37,7 +37,7 @@
         .social-links__facebook,
         .social-links__insta,
         .social-links__tiktok,
-        .social-links__youtube {
+        .social-links__discord {
             margin-bottom: -12px;
             left: 14px;
         }
@@ -47,8 +47,8 @@
         .social-links__tiktok {
             left: 136px;
         }
-        .social-links__youtube {
-            left: 186px;
+        .social-links__discord {
+            left: 188px;
         }
         /* body-nav */
         .body {

@@ -1,3 +1,24 @@
+@-webkit-keyframes slide {
+    0% {
+        transform: translateY(100%);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes pop-in {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
 @keyframes upTo {
     from {
         transform: translateY(100%);
@@ -49,14 +70,26 @@
     }
 }
 
+@keyframes html-load {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 .social-links-profile:hover .social-links__facebook,
 .social-links-profile:hover .social-links__insta,
 .social-links-profile:hover .social-links__tiktok,
-.social-links-profile:hover .social-links__youtube {
+.social-links-profile:hover .social-links__discord {
     display: block;
 }
 
-.social-links-name:hover .youtube {
+.social-links-name:hover .discord {
     color: white;
     background-color: rgb(12, 145, 212);
 }
@@ -76,9 +109,9 @@
     background-color: black;
 }
 
-.youtube:hover {
+.discord:hover {
     color: white;
-    background-color: red;
+    background-color: blue;
 }
 
 
@@ -98,7 +131,8 @@
 
 /* content */
 
-.school-name:hover {
+.school-name:hover,
+.pop-up:hover {
     opacity: .5;
     color: black;
 }

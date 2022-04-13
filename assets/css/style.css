@@ -6,6 +6,10 @@
     user-select: none;
 }
 
+.none {
+    display: none !important;
+}
+
 :root {
     --pri-background-color: #c3ebf8;
     --border-radius: 25px;
@@ -31,6 +35,10 @@ html {
 
 .ml {
     margin-left: 190px !important;
+}
+
+.mt-32 {
+    margin-top: 32px;
 }
 
 .active {
@@ -139,8 +147,8 @@ html {
     color: black;
 }
 
-.youtube {
-    color: red;
+.discord {
+    color: blue;
 }
 
 .social-links-name {
@@ -153,7 +161,7 @@ html {
 .social-links__facebook,
 .social-links__insta,
 .social-links__tiktok,
-.social-links__youtube {
+.social-links__discord {
     color: white;
     padding: 4px 8px;
     border-radius: var(--border-radius);
@@ -178,9 +186,9 @@ html {
     left: 296px;
 }
 
-.social-links__youtube {
-    background-color: red;
-    left: 334px;
+.social-links__discord {
+    background-color: blue;
+    left: 336px;
 }
 
 .social-links__facebook::after {
@@ -219,16 +227,16 @@ html {
     border-color: black transparent transparent transparent;
 }
 
-.social-links__youtube::after {
+.social-links__discord::after {
     display: block;
     content: '';
     position: absolute;
     top: 24px;
-    left: 26px;
+    left: 24px;
     width: 0;
     height: 0;
     border: 8px solid;
-    border-color: red transparent transparent transparent;
+    border-color: blue transparent transparent transparent;
 }
 
 
@@ -352,7 +360,6 @@ html {
     font-size: 28px;
     margin-bottom: 24px;
     font-weight: bolder;
-    text-transform: uppercase;
 }
 
 p {
@@ -379,6 +386,7 @@ p {
 .sub-title {
     font-weight: 550;
     text-transform: capitalize;
+    font-size: 21px;
 }
 
 
@@ -435,6 +443,12 @@ p {
     padding-bottom: 8px;
     color: rgb(112, 112, 112);
     margin-top: -5px;
+    font-size: 14px;
+}
+
+.edu-desc {
+    text-align: justify;
+    line-height: 1.4;
 }
 
 .content-desc .content-game+.content-game {
@@ -491,6 +505,61 @@ p {
 }
 
 
+/* SlideShow */
+
+.slide-list {
+    background: linear-gradient(0, #e1eec3, #f05053);
+    height: 200px;
+    border-radius: var(--border-radius);
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.slide-content {
+    position: relative;
+    overflow: hidden;
+    /* -webkit-animation: slide 14s ease infinite; */
+}
+
+.slide-item_loading {
+    position: absolute;
+    top: 100px;
+    left: 40%;
+    z-index: 99;
+}
+
+.slide-item {
+    /* position: absolute; */
+    display: flex;
+    min-width: 100%;
+    max-width: 100%;
+    height: 200px;
+    align-items: center;
+    padding: 12px 36px;
+    -webkit-animation: slide 4s ease infinite;
+    /* display: none; */
+}
+
+.slide-info {
+    padding-left: 24px;
+}
+
+.slide-info-name {
+    transform: translateY(-50%);
+}
+
+.slide-info-desc {
+    /* padding-top: 8px; */
+}
+
+.slide-avt-img {
+    width: 90px;
+    min-width: 90px;
+    height: 90px;
+    border-radius: var(--border-radius);
+}
+
+
 /* Favorite */
 
 .game-list {}
@@ -542,4 +611,61 @@ p {
 
 .content-movie {
     margin-top: 40px;
+}
+
+.pop-up {
+    cursor: pointer;
+    text-shadow: 0 0 10px cyan;
+    font-weight: bolder;
+    color: orangered;
+}
+
+.nhac {
+    width: 240px;
+    height: 100px;
+    background-color: white;
+    position: fixed;
+    z-index: 9999;
+    top: 50px;
+    left: 35%;
+    display: none;
+}
+
+.close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    padding: 4px 8px 4px 4px;
+}
+
+.nhac-name {
+    position: absolute;
+    top: 45%;
+}
+
+.play-btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+
+/* html loading */
+
+.html-loading {
+    background-color: #553b3b9e;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    height: 1500px;
+    /* animation: html-load 1s; */
+}
+
+.loading-text {
+    position: fixed;
+    top: 42%;
+    left: 42%;
+    font-size: 54px;
 }
